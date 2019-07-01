@@ -1,0 +1,25 @@
+// CDN FONTAWESOME
+// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+//
+// Sass:
+// https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+
+@import "./settings/_colors.scss";
+@import "./generic/_reset.scss";
+@import "./settings/_all.scss";
+@import "./elements/landing-page/_callToAction";
+@import "./elements/app/_main_application_view";
+@import "./elements/app/dekstop_weekly_overview";
+@import "./elements/app/_add_recipe_plan_status";
+@import "./elements/app/_schedules";
+@import "./elements/app/_add_new_recipe.scss";
+@import "./elements/app/_list_of_recipes.scss";
+
+@import "./elements/landing-page/_header.scss";
+@import "./elements/landing-page/_carousel";
+@import "./elements/app/_messageAndForm";
+@import "elements/landing-page/_about-application.scss";
+@import "./elements/landing-page/_about-me.scss";
+@import "elements/landing-page/_newsletter.scss";
+@import "./elements/landing-page/_footer.scss";
+

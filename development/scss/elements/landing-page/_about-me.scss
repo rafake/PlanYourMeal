@@ -1,0 +1,54 @@
+// CDN FONTAWESOME
+// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+//
+// Sass:
+// https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+
+
+body{
+  background-color: #EBEBEB;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.main-about-me {
+  margin: 50px 0;
+
+  .luk-container {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: $headlineColor;
+    img{
+      width: 30%;
+      height: 300px;
+      border-radius: 2px;
+      background-color: $headlineColor;
+    }
+    .about-me{
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      align-items: flex-start;
+
+      h3{
+        font-size: 2.5em;
+        letter-spacing: -1px;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        line-height: 0.5em;
+      }
+      p{
+        font-size: 1.8em;
+        letter-spacing: -1px;
+        margin-top: 0;
+
+      }
+    }
+  }
+}

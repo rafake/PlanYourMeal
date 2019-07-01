@@ -1,0 +1,68 @@
+.weeklyOverview {
+  background: #FFFFFA;
+  //margin: 40px auto;
+  width: 1000px;
+  height: 500px;
+  border: #5B605F dashed 1px;
+}
+
+.weekNo {
+  color: $buttonsColor;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+@for $i from 1 through 7 {
+  .row-#{$i} {
+    border-bottom: #5B605F 2px solid;
+    height: 50px;
+    padding: 5px 20px;
+    margin: 5px 20px;
+    display: flex;
+    //justify-content: center;
+    align-items: center;
+    @if ($i == 1) {
+      border-top: solid 2px #5B605F;
+      font-weight: bold;
+
+    }
+
+  }
+}
+
+.weekDays {
+  display: flex;
+  justify-content: center;
+
+}
+
+@for $i from 1 through 7 {
+  .col-#{$i} {
+    display: block;
+    width: 130px;
+
+    text-align: center;
+
+
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5px;
+  margin-top: 30px;
+  .previous {
+    color: $buttonsColor;
+  }
+  .next {
+    color: $buttonsColor;
+  }
+}
+
+.safd {
+  overflow: hidden;
+}

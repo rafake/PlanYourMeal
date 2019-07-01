@@ -1,0 +1,61 @@
+// CDN FONTAWESOME
+// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+//
+// Sass:
+// https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+
+
+body{
+  background-color: #EBEBEB;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.main-newsletter{
+  background-color: $navSidebarColor;
+  height: 100px;
+  width: 100%;
+  .news-container {
+    width: 1000px;
+    margin: 0 auto;
+
+    h3 {
+      font-size: 3em;
+      color: white;
+      font-weight: 400;
+      letter-spacing: -1px;
+      display: inline-block;
+      float: left;
+      line-height: 0.4em;
+    }
+
+    input {
+      display: inline-block;
+      float: right;
+      margin-top: 30px;
+      border-radius: 2px;
+    }
+    input[type=email]{
+      height: 3em;
+      width: 25%;
+      border: none;
+    }
+    input[type=submit]{
+      height: 3.2em;
+      width: 15%;
+      background-color: $buttonsColor;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      &:hover{
+        background-color: darkorange;
+      }
+    }
+
+  }
+}
+
+

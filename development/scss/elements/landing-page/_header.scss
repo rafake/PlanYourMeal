@@ -1,0 +1,47 @@
+
+//.container {
+//  width: 1000px;
+//}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  background-color: $headlineColor;
+}
+h1.BartekH1 {
+  font-family: 'Charmonman', cursive;
+  color: $brownSpanColor;
+}
+
+a.BatekA{
+  text-decoration: none;
+  text-align: center;
+  color: $bgColorAppColor;
+  padding: 20px;
+}
+
+.navigation ul {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-left: 0;
+}
+.navigation ul li{
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.navigation li:hover a {
+  color: $brownSpanColor;
+}
+
+.whiteSpanColor{
+  color:$bgColorAppColor;
+}
+
+header {
+  background: $headlineColor;
+}

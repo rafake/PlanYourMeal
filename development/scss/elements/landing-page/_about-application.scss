@@ -1,0 +1,48 @@
+// CDN FONTAWESOME
+// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+//
+// Sass:
+// https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+
+
+body{
+  background-color: #EBEBEB;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.ab-app-container{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.features{
+  display: flex;
+  justify-content: space-between;
+  color: $headlineColor;
+  letter-spacing: -1px;
+}
+.feature-one, .feature-two, .feature-three{
+  width: 30%;
+  text-align: center;
+}
+
+.features{
+  .far,.fas{
+    font-size: 5em;
+    color: #A1A194;
+  }
+  h3{
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  p{
+    font-size: 1.8em;
+    padding: 10px;
+    margin-top: 0;
+  }
+}

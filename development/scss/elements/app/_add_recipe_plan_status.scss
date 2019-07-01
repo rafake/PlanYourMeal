@@ -1,0 +1,262 @@
+.addPlanButton {
+  width: 200px;
+  margin: 30px;
+  height: 170px;
+  border: #468966 dashed 1px;
+  background: #FFFFFA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  color: #468966;
+  font-weight: bold;
+  box-sizing: border-box;
+  i {
+    color: #468966;
+    font-size: 100px;
+    margin-bottom: 20px;
+  }
+}
+
+.addRecipeButton {
+  width: 200px;
+  height: 170px;
+  margin: 30px;
+  border: #468966 dashed 1px;
+  background: #FFFFFA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  color: #468966;
+  font-weight: bold;
+  box-sizing: border-box;
+  i {
+    color: #468966;
+    font-size: 100px;
+    margin-bottom: 20px;
+  }
+}
+
+.info-1 {
+  width: 500px;
+  height: 35px;
+  border: #3498DB dashed 1px;
+  background: #FFFFFA;
+  display: flex;
+  //align-items: center;
+  justify-content: space-between;
+  //margin: auto 0;
+  font-size: 14px;
+  color: #3498DB;
+  font-weight: bold;
+  box-sizing: border-box;
+
+  div {
+    display: inline-block;
+
+    padding: 6px 20px;
+  }
+  i {
+    display: inline-block;
+    padding: 6px 5px;
+    width: 20px;
+    height: 20px;
+  }
+  span{
+    font-size: 10px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+  }
+}
+.info-2 {
+  width: 500px;
+  height: 35px;
+  border: #FFB03B dashed 1px;
+  background: #FFFFFA;
+  display: flex;
+  //align-items: center;
+  justify-content: space-between;
+  //margin: auto 0;
+  font-size: 14px;
+  color: #FFB03B;
+  font-weight: bold;
+  box-sizing: border-box;
+
+  div {
+    display: inline-block;
+    padding: 6px 20px;
+  }
+  i {
+    display: inline-block;
+    padding: 6px 5px;
+    width: 20px;
+    height: 20px;
+  }
+  span{
+    font-size: 10px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+  }
+}
+
+.info-3 {
+  width: 500px;
+  height: 35px;
+  border: #468966 dashed 1px;
+  background: #FFFFFA;
+  display: flex;
+  //align-items: center;
+  justify-content: space-between;
+  //margin: auto 0;
+  font-size: 14px;
+  color: #468966;
+  font-weight: bold;
+  box-sizing: border-box;
+
+  div {
+    display: inline-block;
+
+    padding: 6px 20px;
+  }
+  i {
+    display: inline-block;
+    padding: 6px 5px;
+    width: 20px;
+    height: 20px;
+  }
+  span{
+    font-size: 10px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+  }
+}
+
+//===================================================
+//stylowanie wyskakującego dodawania planu
+
+.fullscreen {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background:rgba(255,255,255,0.7);
+}
+.fullscreen .close {
+  display: block;
+  margin: auto;
+}
+
+.insideWrapper3 {
+  display: block;
+  width: 900px;
+  margin: 20px auto;
+  background: #FFFFFA;
+  padding: 20px;
+  border: #5B605F dashed 1px;
+
+}
+
+@for $i from 0 through 8 {
+  .row-exp-#{$i} {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: #5B605F 2px solid;
+
+    @for $j from 0 through 7 {
+      .col-exp-#{$j} {
+
+        display: inline-flex;
+        width: 150px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+
+      }
+    }
+  }
+}
+
+.titleButton {
+  text-transform: uppercase;
+  height: 40px;
+  color: $buttonsColor;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #5B605F 2px solid;
+
+
+
+}
+
+.orangeExitButton {
+  background: $buttonsColor;
+  color: white;
+  font-weight: bold;
+  box-shadow: none;
+  transform: translate(390px, -44px);
+
+}
+
+
+
+input, textarea {
+  &:focus {
+    outline: 0;
+    background: #ffb080;
+  }
+  &::placeholder {
+    font-family: Arial;
+  }
+}
+
+form label:nth-of-type(1) input {
+  margin-left: 40px;
+}
+
+form textarea {
+  margin-left: 54px;
+}
+
+form label:nth-of-type(3) input {
+  margin-left: 19px;
+}
+
+textarea {
+  width: 700px;
+  height: 100px;
+  resize: none;
+}
+
+label:first-child {
+  display: inline-flex;
+  align-items: flex-start;
+
+}
+label:nth-of-type(2) {
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+label:nth-of-type(3) {
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.safd {
+  overflow: hidden;
+}

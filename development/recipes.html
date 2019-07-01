@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Zaplanuj Jedzonko</title>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Charmonman:400,700|Open+Sans:400,700&display=swap&subset=latin-ext"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="wrapper">
+    <header>
+
+        <a href="#" class="logo"><h1>Zaplanuj <span>Jedzonko</span></h1></a>
+
+        <nav>
+            <div class="userName">
+                Imię
+            </div>
+            <i class="fas fa-user-circle" style="font-size:36px"></i>
+        </nav>
+
+    </header>
+
+    <aside>
+        <a href="./app.html"><button class="sidebarButtonsApp">pulpit</button></a>
+        <a href="./recipes.html"><button class="sidebarButtonsApp">przepisy</button></a>
+        <a href="./schedules.html"><button class="sidebarButtonsApp">plany</button></a>
+    </aside>
+    <main>
+        <div class="recipes-container">
+            <div class="title-and-addButton">
+                <p>lista przepisów</p>
+                <button class="add-recipe"><i class="fas fa-plus-square"></i></button>
+            </div>
+            <div class="names-of-sections">
+                <p class="recipe-id">id</p>
+                <p class="recipe-name">nazwa</p>
+                <p class="recipe-description">opis</p>
+                <p class="recipe-actions">akcje</p>
+            </div>
+
+        </div>
+
+        <div class="add-new-recipe-container">
+            <form name="new-recipe">
+                <div class="title-and-button">
+                    <p>nowy przepis</p>
+                    <button class="saveClose">Zapisz i zamknij</button>
+                </div>
+                <div class="name-and-description">
+                    <div class="name">
+                        <span>Nazwa przepisu</span><input type="text" name="name" id="name-recipe" maxlength="50">
+                    </div>
+                    <div class="description">
+                        <span>Opis przepisu</span><textarea id="description-recipe" maxlength="360"></textarea>
+                    </div>
+                </div>
+                <div class="instructions-and-ingredients">
+                    <div class="instructions">
+                        <span>instrukcje</span>
+                        <div class="instruction-and-button">
+                            <textarea id="instruction-txt" maxlength="150"></textarea>
+                            <button class="instruction">
+                                <i class="fas fa-plus-square"></i>
+                            </button>
+                        </div>
+                        <div class="list-of-instructions">
+                            <ol class="instruction-list">
+
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="ingredients">
+                        <span>składniki</span>
+                        <div class="ingredient-and-button">
+                            <textarea id="ingredient-txt" maxlength="50"></textarea>
+                            <button class="ingredient">
+                                <i class="fas fa-plus-square"></i>
+                            </button>
+                        </div>
+                        <div class="list-of-ingredients">
+                            <ul class="ingredient-list">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</div>
+<script src="js/recipes.js"></script>
+
+</body>
+</html>

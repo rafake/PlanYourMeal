@@ -1,0 +1,118 @@
+// CDN FONTAWESOME
+// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+//
+// Sass:
+// https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+
+
+body {
+  background-color: #EBEBEB;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.main-three-columns {
+  background-color: $navSidebarColor;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.foot-container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.three-columns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.contact, .about-company, .newsletter-social-media {
+  width: 30%;
+
+  h3 {
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+  }
+}
+
+.contact {
+  box-sizing: border-box;
+  padding-right: 40px;
+  p {
+    font-size: 1em;
+  }
+}
+
+.about-company {
+  ul {
+    padding-left: 20px;
+
+    li {
+      line-height: 1.8em;
+    }
+  }
+}
+
+.newsletter-social-media {
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  .newslet {
+    margin-bottom: 15px;
+
+    input[type=email] {
+      height: 2em;
+      width: 55%;
+      border: none;
+      border-radius: 2px;
+      padding: 0;
+    }
+    input[type=submit] {
+      height: 2em;
+      width: 25%;
+      border: none;
+      border-radius: 2px;
+      background-color: $buttonsColor;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      &:hover{
+        background-color: darkorange;
+      }
+    }
+  }
+  .social {
+    a {
+      text-decoration: none;
+      font-size: 2em;
+      color: white;
+      margin-right: 50px;
+      &:hover{
+        color: $buttonsColor;
+      }
+    }
+  }
+}
+footer{
+  background-color: $headlineColor;
+  padding: 5px 0;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.8px;
+  text-align: center;
+  span.footspan{
+    color: $buttonsColor;
+  }
+}
+
+

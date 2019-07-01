@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  font-family: 'Charmonman', cursive;
+  text-decoration: none;
+  h1 {
+    color: white;
+  }
+  span {
+    color: #E58A20
+  }
+}
+
+.wrapper {
+  width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 245px 1055px;
+  grid-template-rows: 85px auto;
+  grid-template-areas:
+        "h h"
+        "a m";
+}
+
+header {
+  grid-area: h;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 10px 13px -7px #000000, 1px 5px 15px -9px rgba(0,0,0,0);
+
+  a{
+    display: block;
+    //justify-content: flex-start;
+    //align-items: center;
+    margin: 0;
+    padding: 0 15px;
+    h1 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  nav {
+    display: flex;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+
+    i {
+      color: $buttonsColor;
+    }
+
+  }
+}
+.userName {
+  padding-right: 20px;
+}
+
+aside {
+  grid-area: a;
+  height: 100vh;
+  background: #636766;
+}
+
+.sidebarButtonsApp {
+  text-transform: capitalize;
+  color: white;
+  display: block;
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  transition: 0.3s;
+  padding: 15px 0;
+  &:hover {
+    border-left: $buttonsColor 4px solid;
+    position: relative;
+    font-weight: bold;
+  }
+  &:hover:after {
+    content: " ";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: $buttonsColor 2px solid;
+    border-right: $buttonsColor 2px solid;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 15px;
+    top: 26px;
+
+
+  }
+}
+
+main {
+  grid-area: m;
+  background-image: url("../images/image.png");
+}
+
+.insideWrapper1 {
+  margin: 40px auto;
+  display: flex;
+  justify-content: flex-start;
+
+
+  .status {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.insideWrapper2 {
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+
+.safd {
+  overflow: hidden;
+}

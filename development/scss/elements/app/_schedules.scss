@@ -1,0 +1,94 @@
+.planList {
+
+  //margin: 40px auto;
+  width: 1000px;
+  height: 500px;
+
+}
+
+.headlines {
+  color: black;
+  font-weight: bold;
+  display: flex;
+  margin: 0 10px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.plansListCenter {
+  color: $buttonsColor;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+
+}
+
+div[id*="row-plan"] {
+  display: flex;
+  padding: 5px;
+  border-top: #5B605F 2px solid;
+  margin: 0 10px;
+
+ }
+
+.column-0 {
+  width: 100px;
+}
+
+.column-1 {
+  width: 200px;
+}
+
+.column-2 {
+  width: 500px
+}
+
+.column-3 {
+  width: 100px
+}
+.column-4 {
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addPlanButtonSmall .far.fa-plus-square.small {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+  &:before {
+    color: #468966;
+    font-size: 30px;
+  }
+
+}
+
+.scrollClass {
+  overflow-y: scroll;
+}
+
+.insideWrapper4 {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  border: #5B605F solid 2px;
+  background: #FFFFFA;
+}
+
+.fa-trash-alt {
+  color: #e92d34;
+}
+.fa-edit {
+  color: $buttonsColor;
+}
+
+.hidden-button {
+  display: none;
+}
+
+.safd {
+  overflow: hidden;
+}

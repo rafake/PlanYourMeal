@@ -1,0 +1,63 @@
+.callToAction {
+  font-family: 'Open Sans', sans-serif;
+  background-color: $navSidebarColor;
+  height: 200px;
+  width: 100%;
+}
+
+.callToAction .container {
+  width: 1000px;
+  margin: 0 auto;
+
+}
+
+h3.BartekH3{
+  font-weight: lighter;
+  margin-top: 60px;
+}
+
+.callToAction .container h3 {
+  font-size: 35px;
+  color: white;
+  letter-spacing: 1px;
+  display: inline-block;
+  float: left;
+  line-height: 6px;
+}
+
+span.BartekSpan{
+  float: left;
+  font-size: 1.3em;
+  color: $bgColorAppColor;
+  margin-left: 0;
+}
+
+.callToAction .container input {
+  display: inline-block;
+  float: right;
+  border-radius: 2px;
+}
+
+.callToAction .container input[type=submit] {
+  height: 3.2em;
+  width: 17%;
+  margin-top: -20px;
+  background-color: $buttonsColor;
+  color: $bgColorAppColor;
+  font-weight: bold;
+  border: 1px solid #FF6600;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darkorange;
+  }
+}
+
+.callToAction .container:after {
+  content: '';
+  clear: both;
+}
+.container {
+  background-color: $navSidebarColor !important;
+  border: none !important;
+}
