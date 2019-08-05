@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Zaplanuj Jedzonko</title>
+    <title>Plan your meal</title>
     <link rel="stylesheet" href="./css/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=Charmonman:400,700|Open+Sans:400,700&display=swap&subset=latin-ext"
           rel="stylesheet">
@@ -18,32 +18,32 @@
   <div class="wrapper">
     <header>
 
-      <a href="#" class="logo"><h1>Zaplanuj <span>Jedzonko</span></h1></a>
+      <a href="#" class="logo"><h1>PlanYour <span> Meal</span></h1></a>
 
       <nav>
-        <div class="userName">
-          Imię
-        </div>
+<!--        <div class="userName">-->
+<!--          Name-->
+<!--        </div>-->
         <i class="fa fa-user-circle-o" style="font-size:36px"></i>
       </nav>
 
     </header>
 
     <aside>
-      <a href="./app.html"><button class="sidebarButtonsApp">pulpit</button></a>
-      <a href="./recipes.html"><button class="sidebarButtonsApp">przepisy</button></a>
-      <a href="./schedules.html"><button class="sidebarButtonsApp">plany</button></a>
+      <a href="./app.html"><button class="sidebarButtonsApp">Desktop</button></a>
+<!--      <a href="./recipes.html"><button class="sidebarButtonsApp">Recipes</button></a>-->
+      <a href="./schedules.html"><button class="sidebarButtonsApp">Plans</button></a>
     </aside>
     <main>
       <div class="insideWrapper1">
 <!--      add plan and recipe buttons-->
             <div class="addRecipeButton">
               <i class="far fa-plus-square"></i>
-              dodaj przepis
+              Add recipe
             </div>
             <div class="addPlanButton">
               <i class="far fa-plus-square"></i>
-              dodaj plan
+              Add plan
             </div>
             <div class="status">
               <div class="info-1">
@@ -54,7 +54,7 @@
 
               <script type="text/javascript">
                 var statusRecipeNo = document.querySelector(".info-1 div");
-                statusRecipeNo.innerText = `Masz już ${JSON.parse(localStorage.getItem("plan")).length} przepisów, nieźle!`;
+                statusRecipeNo.innerText = `You have ${JSON.parse(localStorage.getItem("plan")).length} plans, well done!`;
               </script>
 
               <div class="info-2">
@@ -65,7 +65,7 @@
 
               <div class="info-3">
                 <i class="fas fa-check-circle"></i>
-                <div>Świetnie, że jesteś! Udanego planowania i smacznego! :)</div>
+                <div>We are glad you are here! Have a good day!</div>
                 <span><i class="fas fa-times-circle"></i></span>
               </div>
 
@@ -74,88 +74,87 @@
 <!-- weekly overview-->
       <div class="insideWrapper2">
       <div class="weeklyOverview">
-        <div class="weekNo">Twój plan na {nr_tygodnia} tydzień:</div>
+        <div class="weekNo">Your plan for {week_no} week:</div>
 
         <div class="row-1">
           <div class="weekDays">
-            <div class="col-1">Poniedziałek</div>
-            <div class="col-2">Wtorek</div>
-            <div class="col-3">Środa</div>
-            <div class="col-4">Czwartek</div>
-            <div class="col-5">Piątek</div>
-            <div class="col-6">Sobota</div>
-            <div class="col-7">Niedziela</div>
+            <div class="col-1">Mon</div>
+            <div class="col-2">Tue</div>
+            <div class="col-3">Wed</div>
+            <div class="col-4">Thu</div>
+            <div class="col-5">Fri</div>
+            <div class="col-6">Sat</div>
+            <div class="col-7">Sun</div>
           </div>
         </div>
         <div class="row-2">
-          <div class="col-1">śniadanie</div>
-          <div class="col-2">śniadanie</div>
-          <div class="col-3">śniadanie</div>
-          <div class="col-4">śniadanie</div>
-          <div class="col-5">śniadanie</div>
-          <div class="col-6">śniadanie</div>
-          <div class="col-7">śniadanie</div>
+          <div class="col-1">breakfast</div>
+          <div class="col-2">breakfast</div>
+          <div class="col-3">breakfast</div>
+          <div class="col-4">breakfast</div>
+          <div class="col-5">breakfast</div>
+          <div class="col-6">breakfast</div>
+          <div class="col-7">breakfast</div>
         </div>
         <div class="row-3">
-          <div class="col-1">drugie śniadanie</div>
-          <div class="col-2">drugie śniadanie</div>
-          <div class="col-3">drugie śniadanie</div>
-          <div class="col-4">drugie śniadanie</div>
-          <div class="col-5">drugie śniadanie</div>
-          <div class="col-6">drugie śniadanie</div>
-          <div class="col-7">drugie śniadanie</div>
+          <div class="col-1">brunch</div>
+          <div class="col-2">brunch</div>
+          <div class="col-3">brunch</div>
+          <div class="col-4">brunch</div>
+          <div class="col-5">brunch</div>
+          <div class="col-6">brunch</div>
+          <div class="col-7">brunch</div>
         </div>
         <div class="row-4">
-          <div class="col-1">zupa</div>
-          <div class="col-2">zupa</div>
-          <div class="col-3">zupa</div>
-          <div class="col-4">zupa</div>
-          <div class="col-5">zupa</div>
-          <div class="col-6">zupa</div>
-          <div class="col-7">zupa</div>
+          soup
+          <div class="col-2">soup</div>
+          <div class="col-3">soup</div>
+          <div class="col-4">soup</div>
+          <div class="col-5">soup</div>
+          <div class="col-6">soup</div>
+          <div class="col-7">soup</div>
         </div>
         <div class="row-5">
-          <div class="col-1">drugie danie</div>
-          <div class="col-2">drugie danie</div>
-          <div class="col-3">drugie danie</div>
-          <div class="col-4">drugie danie</div>
-          <div class="col-5">drugie danie</div>
-          <div class="col-6">drugie danie</div>
-          <div class="col-7">drugie danie</div>
+          <div class="col-1">main course</div>
+          <div class="col-2">main course</div>
+          <div class="col-3">main course</div>
+          <div class="col-4">main course</div>
+          <div class="col-5">main course</div>
+          <div class="col-6">main course</div>
+          <div class="col-7">main course</div>
         </div>
         <div class="row-6">
-          <div class="col-1">kolacja</div>
-          <div class="col-2">kolacja</div>
-          <div class="col-3">kolacja</div>
-          <div class="col-4">kolacja</div>
-          <div class="col-5">kolacja</div>
-          <div class="col-6">kolacja</div>
-          <div class="col-7">kolacja</div>
+          <div class="col-1">supper</div>
+          <div class="col-2">supper</div>
+          <div class="col-3">supper</div>
+          <div class="col-4">supper</div>
+          <div class="col-5">supper</div>
+          <div class="col-6">supper</div>
+          <div class="col-7">supper</div>
         </div>
         <div class="buttonContainer">
-          <button class="previous">&lt &lt poprzedni</button>
-          <button class="next">następny &gt &gt</button>
+          <button class="previous">&lt &lt previous</button>
+          <button class="next">next &gt &gt</button>
         </div>
 
 
       </div>
       </div>
 
-      <div class="container">
-        <div class="messageForm">
-            <h1>Witaj,</h1>
-            <span>wygląda na to że jesteś tutaj<br>
-            pierwszy raz!</span>
-          <div>
-            <input id="name" type="text" placeholder="tutaj wpisz jak masz na imię"/>
-          </div>
-          <div>
-          <button type="button" class="messageForm" id="rederButton" id="addBtn">Gotowe!</button>
-          </div>
-          <span>Podaj nam swoje imię, a my zorganizujemy<br>
-          dla Ciebie naszą aplikację :)</span>
-        </div>
-      </div>
+<!--      <div class="container">-->
+<!--        <div class="messageForm">-->
+<!--            <h1>Hi,</h1>-->
+<!--            <span>Hi, It looks like you are here for the first time!</span>-->
+<!--          <div>-->
+<!--            <input id="name" type="text" placeholder="Put you name here"/>-->
+<!--          </div>-->
+<!--          <div>-->
+<!--          <button type="button" class="messageForm" id="rederButton" id="addBtn">Press me!</button>-->
+<!--          </div>-->
+<!--          <span>Fill in you name <br>-->
+<!--          and wait until the app will log in to your account</span>-->
+<!--        </div>-->
+<!--      </div>-->
 
 
     </main>

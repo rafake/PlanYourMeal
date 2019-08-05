@@ -24,13 +24,15 @@ addEventListener("DOMContentLoaded", function () {
         // creating a form inside a div
         var newForm = document.createElement("form");
         newDiv2.appendChild(newForm);
+
         // givin the necessary parameters to the button e.g. a submit function for the form
         newForm.appendChild(newButtOn);
-        newDiv3.innerText = "nowy plan";
-        newButtOn.value = "Zapisz i zamknij";
+        newDiv3.innerText = "New plan";
+        newButtOn.value = "Save and close";
         newButtOn.type = "submit";
 
         newForm.action = "#";
+        newForm.classList.add("formClass");
 
         // identation elements for visual purposes
         var br1 = document.createElement("p");
@@ -40,11 +42,11 @@ addEventListener("DOMContentLoaded", function () {
         // input 1
         var label1 = document.createElement("label");
         var input1 = document.createElement("input");
-        label1.innerText = "Nazwa planu";
+        label1.innerText = "Plan's name";
         label1.htmlFor = "planName";
         input1.id = "planName";
         input1.type = "text";
-        input1.placeholder = "Wpisz nazwę planu.";
+        input1.placeholder = "Put your plan's name";
         input1.required = true;
         input1.name = "planName";
         newForm.appendChild(label1);
@@ -54,25 +56,25 @@ addEventListener("DOMContentLoaded", function () {
         // input 2
         var label2 = document.createElement("label");
         var textarea = document.createElement("textarea");
-        label2.innerText = "Opis planu";
+        label2.innerText = "Plan description";
         label2.htmlFor = "planDescription";
         textarea.id = "planDescription";
         textarea.name = "planDescription";
         textarea.required = true;
         textarea.type = "text";
-        textarea.placeholder = "Opisz główne założenia planu.";
+        textarea.placeholder = "Main assumptions of the plan";
         newForm.appendChild(label2);
         label2.appendChild(textarea);
         newForm.appendChild(br2);
         // input 3
         var label3 = document.createElement("label");
         var input3 = document.createElement("input");
-        label3.innerText = "Numer tygodnia";
+        label3.innerText = "Week no";
         label3.htmlFor = "weekNoInput";
         input3.id = "weekNoInput";
         input3.type = "number";
         input3.required = true;
-        input3.placeholder = "Numer tygodnia.";
+        input3.placeholder = "Week number.";
         input3.name = "weekNoInput";
         newForm.appendChild(label3);
         label3.appendChild(input3);
@@ -106,33 +108,33 @@ addEventListener("DOMContentLoaded", function () {
                     if (j == 0) {
                         arrayColumns[j].innerText = "";
                     } else if (j == 1) {
-                        arrayColumns[j].innerText = "śniadanie";
+                        arrayColumns[j].innerText = "breakfast";
                     } else if (j == 2) {
-                        arrayColumns[j].innerText = "drugie śniadanie";
+                        arrayColumns[j].innerText = "brunch";
                     } else if (j == 3) {
-                        arrayColumns[j].innerText = "zupa";
+                        arrayColumns[j].innerText = "soup";
                     } else if (j == 4) {
-                        arrayColumns[j].innerText = "drugie danie";
+                        arrayColumns[j].innerText = "main course";
                     } else if (j == 5) {
-                        arrayColumns[j].innerText = "kolacja";
+                        arrayColumns[j].innerText = "supper";
                     }
 
 
                 } else if (j == 0) {
                     if (i == 1) {
-                        arrayColumns[j].innerText = "poniedziałek";
+                        arrayColumns[j].innerText = "Mon";
                     } else if (i == 2) {
-                        arrayColumns[j].innerText = "wtorek";
+                        arrayColumns[j].innerText = "Tue";
                     } else if (i == 3) {
-                        arrayColumns[j].innerText = "środa";
+                        arrayColumns[j].innerText = "Wed";
                     } else if (i == 4) {
-                        arrayColumns[j].innerText = "czwartek";
+                        arrayColumns[j].innerText = "Thu";
                     } else if (i == 5) {
-                        arrayColumns[j].innerText = "piątek";
+                        arrayColumns[j].innerText = "Fri";
                     } else if (i == 6) {
-                        arrayColumns[j].innerText = "sobota";
+                        arrayColumns[j].innerText = "Sat";
                     } else if (i == 7) {
-                        arrayColumns[j].innerText = "niedziela";
+                        arrayColumns[j].innerText = "Sun";
                     }
                 } else {
 
@@ -309,13 +311,15 @@ addEventListener("DOMContentLoaded", function () {
                     newButtOn.classList.add("orangeExitButton");
                     newDiv2.appendChild(newDiv3);
                     newDiv3.classList.add("titleButton");
+
                     // creating a form inside a div
                     var newForm = document.createElement("form");
+                    newForm.classList.add("formClass");
                     newDiv2.appendChild(newForm);
                     // givin the necessary parameters to the button e.g. a submit function for the form
                     newForm.appendChild(newButtOn);
                     newDiv3.innerText = "nowy plan";
-                    newButtOn.value = "Zapisz i zamknij";
+                    newButtOn.value = "Save and close";
                     newButtOn.type = "submit";
 
                     newForm.action = "#";
@@ -328,11 +332,11 @@ addEventListener("DOMContentLoaded", function () {
                     // input 1
                     var label1 = document.createElement("label");
                     var input1 = document.createElement("input");
-                    label1.innerText = "Nazwa planu";
+                    label1.innerText = "Plan's name";
                     label1.htmlFor = "planName";
                     input1.id = "planName";
                     input1.type = "text";
-                    input1.placeholder = "Wpisz nazwę planu.";
+                    input1.placeholder = "Fill in the plan's name.";
                     input1.value = allItemsToEdit[index].title;
                     input1.required = true;
                     input1.name = "planName";
@@ -343,26 +347,26 @@ addEventListener("DOMContentLoaded", function () {
                     // input 2
                     var label2 = document.createElement("label");
                     var textarea = document.createElement("textarea");
-                    label2.innerText = "Opis planu";
+                    label2.innerText = "Plan's description";
                     label2.htmlFor = "planDescription";
                     textarea.id = "planDescription";
                     textarea.name = "planDescription";
                     textarea.required = true;
                     textarea.type = "text";
                     textarea.value = allItemsToEdit[index].description;
-                    textarea.placeholder = "Opisz główne założenia planu.";
+                    textarea.placeholder = "Main plan's assumptions";
                     newForm.appendChild(label2);
                     label2.appendChild(textarea);
                     newForm.appendChild(br2);
                     // input 3
                     var label3 = document.createElement("label");
                     var input3 = document.createElement("input");
-                    label3.innerText = "Numer tygodnia";
+                    label3.innerText = "Week no";
                     label3.htmlFor = "weekNoInput";
                     input3.id = "weekNoInput";
                     input3.type = "number";
                     input3.required = true;
-                    input3.placeholder = "Numer tygodnia.";
+                    input3.placeholder = "Week number.";
                     input3.name = "weekNoInput";
                     input3.value = allItemsToEdit[index].weekNumber;
                     newForm.appendChild(label3);
@@ -397,33 +401,33 @@ addEventListener("DOMContentLoaded", function () {
                                 if (j == 0) {
                                     arrayColumns[j].innerText = "";
                                 } else if (j == 1) {
-                                    arrayColumns[j].innerText = "śniadanie";
+                                    arrayColumns[j].innerText = "breakfast";
                                 } else if (j == 2) {
-                                    arrayColumns[j].innerText = "drugie śniadanie";
+                                    arrayColumns[j].innerText = "brunch";
                                 } else if (j == 3) {
-                                    arrayColumns[j].innerText = "zupa";
+                                    arrayColumns[j].innerText = "soup";
                                 } else if (j == 4) {
-                                    arrayColumns[j].innerText = "drugie danie";
+                                    arrayColumns[j].innerText = "main course";
                                 } else if (j == 5) {
-                                    arrayColumns[j].innerText = "kolacja";
+                                    arrayColumns[j].innerText = "supper";
                                 }
 
 
                             } else if (j == 0) {
                                 if (i == 1) {
-                                    arrayColumns[j].innerText = "poniedziałek";
+                                    arrayColumns[j].innerText = "Mon";
                                 } else if (i == 2) {
-                                    arrayColumns[j].innerText = "wtorek";
+                                    arrayColumns[j].innerText = "Tue";
                                 } else if (i == 3) {
-                                    arrayColumns[j].innerText = "środa";
+                                    arrayColumns[j].innerText = "Wed";
                                 } else if (i == 4) {
-                                    arrayColumns[j].innerText = "czwartek";
+                                    arrayColumns[j].innerText = "Thu";
                                 } else if (i == 5) {
-                                    arrayColumns[j].innerText = "piątek";
+                                    arrayColumns[j].innerText = "Fri";
                                 } else if (i == 6) {
-                                    arrayColumns[j].innerText = "sobota";
+                                    arrayColumns[j].innerText = "Sat";
                                 } else if (i == 7) {
-                                    arrayColumns[j].innerText = "niedziela";
+                                    arrayColumns[j].innerText = "Sun";
                                 }
                             } else {
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Zaplanuj Jedzonko</title>
+    <title>Plan your meal</title>
     <link rel="stylesheet" href="./css/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=Charmonman:400,700|Open+Sans:400,700&display=swap&subset=latin-ext"
           rel="stylesheet">
@@ -17,33 +17,33 @@
 <div class="wrapper">
     <header>
 
-        <a href="#" class="logo"><h1>Zaplanuj <span>Jedzonko</span></h1></a>
+        <a href="#" class="logo"><h1>PlanYour <span> Meal</span></h1></a>
 
         <nav>
-            <div class="userName">
-                Imię
-            </div>
-            <i class="fas fa-user-circle" style="font-size:36px"></i>
+<!--            <div class="userName">-->
+<!--                Name-->
+<!--            </div>-->
+<!--            <i class="fas fa-user-circle" style="font-size:36px"></i>-->
         </nav>
 
     </header>
 
     <aside>
-        <a href="./app.html"><button class="sidebarButtonsApp">pulpit</button></a>
-        <a href="./recipes.html"><button class="sidebarButtonsApp">przepisy</button></a>
-        <a href="./schedules.html"><button class="sidebarButtonsApp">plany</button></a>
+        <a href="./app.html"><button class="sidebarButtonsApp">Desktop</button></a>
+<!--        <a href="./recipes.html"><button class="sidebarButtonsApp">Recipes</button></a>-->
+        <a href="./schedules.html"><button class="sidebarButtonsApp">Plans</button></a>
     </aside>
     <main>
         <div class="recipes-container">
             <div class="title-and-addButton">
-                <p>lista przepisów</p>
+                <p>Recipes list</p>
                 <button class="add-recipe"><i class="fas fa-plus-square"></i></button>
             </div>
             <div class="names-of-sections">
                 <p class="recipe-id">id</p>
-                <p class="recipe-name">nazwa</p>
-                <p class="recipe-description">opis</p>
-                <p class="recipe-actions">akcje</p>
+                <p class="recipe-name">name</p>
+                <p class="recipe-description">description</p>
+                <p class="recipe-actions">actions</p>
             </div>
 
         </div>
@@ -51,20 +51,20 @@
         <div class="add-new-recipe-container">
             <form name="new-recipe">
                 <div class="title-and-button">
-                    <p>nowy przepis</p>
-                    <button class="saveClose">Zapisz i zamknij</button>
+                    <p>New recipe</p>
+                    <button class="saveClose">Save and close</button>
                 </div>
                 <div class="name-and-description">
                     <div class="name">
-                        <span>Nazwa przepisu</span><input type="text" name="name" id="name-recipe" maxlength="50">
+                        <span>Recipe name</span><input type="text" name="name" id="name-recipe" maxlength="50">
                     </div>
                     <div class="description">
-                        <span>Opis przepisu</span><textarea id="description-recipe" maxlength="360"></textarea>
+                        <span>Recipe description</span><textarea id="description-recipe" maxlength="360"></textarea>
                     </div>
                 </div>
                 <div class="instructions-and-ingredients">
                     <div class="instructions">
-                        <span>instrukcje</span>
+                        <span>instructions</span>
                         <div class="instruction-and-button">
                             <textarea id="instruction-txt" maxlength="150"></textarea>
                             <button class="instruction">
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                     <div class="ingredients">
-                        <span>składniki</span>
+                        <span>ingredients</span>
                         <div class="ingredient-and-button">
                             <textarea id="ingredient-txt" maxlength="50"></textarea>
                             <button class="ingredient">

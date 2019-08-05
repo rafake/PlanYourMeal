@@ -78,7 +78,8 @@ body {
   display: grid;
   grid-template-columns: 245px 1055px;
   grid-template-rows: 85px auto;
-  grid-template-areas: "h h" "a m"; }
+  grid-template-areas: "h h"
+ "a m"; }
 
 header {
   grid-area: h;
@@ -529,11 +530,18 @@ a {
 
 .insideWrapper3 {
   display: block;
-  width: 900px;
+  width: 1200px;
+
+
   margin: 20px auto;
+  height: 800px;
   background: #FFFFFA;
   padding: 20px;
   border: #5B605F dashed 1px; }
+
+.formClass {
+  border: none;
+}
 
 .row-exp-0 {
   display: -webkit-box;

@@ -19,20 +19,20 @@ var allPlanns = [];
 
 var allRecipesContainer = [];
 var recipe1 = {
-    title: 'jajecznica',
+    title: 'scrumbled eggs',
     recDescription: 'dobra na każde śniadanie',
     ingredients: ["jajko", "sól", "masło"],
     manual: ["umyj", "gotuj"],
 };
 
 var recipe2 = {
-    title: 'kurczak z ryżem',
+    title: 'chicken with rice',
     recDescription: 'dobry na każdy obiad',
     ingredients: ["kurczak", "sól", "ryż"],
     manual: ["umyj", "gotuj"],
 };
 var recipe3 = {
-    title: 'kurczak',
+    title: 'chicken',
     recDescription: 'dobry na każdy obiad',
     ingredients: ["kurczak", "sól", "ryż"],
     manual: ["umyj", "gotuj"],
@@ -57,7 +57,7 @@ function savePlanToLocalStorage(newObject) {
         dataFromLocalStorage.push(newObject);
         localStorage.setItem("plan", JSON.stringify(dataFromLocalStorage));
     }
-    alert("Plan zapisany");
+    alert("Plan saved");
 }
 
 // asdf

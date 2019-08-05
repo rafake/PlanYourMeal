@@ -187,7 +187,7 @@ saveCloseButton.addEventListener('click', function (e) { //klikniecie przycisku 
     showRecipes();
 
     newRecipeContainer.style.display = 'none';
-    alert('!!BRAWO. DODAŁEŚ SWÓJ PRZEPIS!!')
+    alert('You saved a recipe!')
 });
 
 
