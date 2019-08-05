@@ -1,5 +1,5 @@
 # PlanYourMeal
-Meal planner and recipe data base
+Meal planner and recipe data base.
 
 # Description
 Project prepared in the Scrum methodology during the bootcamp
